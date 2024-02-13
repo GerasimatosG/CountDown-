@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Project</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+
+<body>
+    
+     <video autoplay muted loop id="myVideo" >
+        <source src="./background_video.mp4" type="video/mp4">
+    </video>
+    
+    <div id="heading">
+    <h1>WEBSITE IS ALMOST READY</h1>
+
+    <h4>
+        <span class="firstLine">Our Website is under Construction.</span>
+        <span class="secondLine">We'll be here soon with our new Awesome Website.</span>            
+    </h4>
+    <br>
+    <h4>Subscribe to be notified.</h4>
+    </div>
+    <br><br><br><br>
+
+    <!-- Countdown display tags -->
+    <div id="countDownDiv">         
+        <h1 id="countdown" class="inline"></h1>
+        <div id="countDownWords">
+                <div class="daysDiv">
+                    <h5 id="days" class="inline">Days</h5>
+                </div>
+        <h5 id="hours" class="inline">Hours</h5>
+        <h5 id="minutes" class="inline">Minutes</h5>
+        <h5 id="seconds" class="inline">Seconds</h5>
+        </div>
+    </div>
+    
+     <!-- Buttons tags with links -->
+            <div id="buttonsDiv">
+                    <a href="file:///C:/Users/%CE%93%CE%B5%CF%81%CE%B1%CF%83%CE%B9%CE%BC%CE%BF%CF%82/Desktop/Datalabs/HTML_CSS_JS/Project/index.html">
+                <button type="button" class="btn  btnstyle" id="homebtn">HOME</button>
+                </a>
+
+                <button type="button" class="btn  btnstyle" id="subscribebtn">SUBSCRIBE NOW</button>
+                <button type="button" class="btn  btnstyle" id="contactbtn">CONTACT US</button>
+            </div>
+
+
+
+    <!-- Subscribe Modal  -->
+    <div id="subscribeModal" class="subModal">
+        <div class="subModal-content">
+            <span class="close">&times;</span>
+            <p style="font-weight: bold; text-align: center; font-size: 30px; text-decoration: underline;">Subscribe to never miss a thing!</p>
+            <br>
+            <form id="subscribeForm">
+
+                <label for="firstName" class="formstyle">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+          
+                <label for="lastName" class="formstyle">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+          
+                <label for="email" class="formstyle">Email:</label>
+                <input type="email" id="email" name="email" required>
+            
+               <br>
+                <input type="submit" value="Subscribe" id="submitSubscribe">
+        </div>
+    </div>
+
+
+
+      <!-- Contact Us modal -->
+       <div id="contactModal" class="conModal">
+         <div class="conModal-content">
+            <span class="closeContact">&times;</span>
+            <p id="conParagraph">You can Contact Us by filling the Form Below</p>
+            <br>
+            <form id="contactForm">
+                <div id="column1">
+                <label for="conFrstName" class="labelNamePosition">*FIRST NAME</label>
+                <input type="text" id="conFrstName" name="firstName" required>
+              
+                <label for="conLastName" class="labelNamePosition">*LAST NAME</label>
+                <input type="text" id="conLastName" name="lastName" required>
+              
+                <label for="conStreet" class="labelNamePosition">*STREET</label>
+                <input type="text" id="conStreet" name="street" required>
+
+                <label for="conNumber" class="labelNamePosition">*NUMBER</label>
+                <input type="number" id="conNumber" name="number" required>
+
+                <label for="conCity" class="labelNamePosition">*CITY</label>
+                <input type="text" id="conCity" name="conCity" required>
+
+                <label for="conArea" class="labelNamePosition">*COUNTRY</label>
+                <input type="text" id="conArea" name="conArea" required> <br>
+
+                <label for="family" class="labelNamePosition" >*MARTIAL STATUS</label>
+                <select id="family" name="family" class="center" required>
+                    <option  value="married">Married</option>
+                    <option value="notMarried">Single</option>
+                    <option  value="divorced">Divorced</option>
+                </select><br>
+
+                <label for="children" class=" labelNamePosition">·CHILDREN</label>
+                <input type="checkbox" id="children" name="children" class="center"><br>
+               
+                <div id="additionalField"  style="display: none;">
+                 <label for="childrenNumber" class="labelNamePosition center">·NUMBER OF CHILDREN</label>
+                 <input type="number" id="childrenNumber" name="childrenNumber" required> 
+                </div>
+            </div>
+             
+               <div id="column2">
+                <label for="birthday" class="center">*BIRTH DATE</label>
+                <input type="date" id="birthday" name="birthday" required><br>
+
+                <label for="gender" class="center">*SEX</label>
+                <select name="gender" id="gender" class="center" style="width: 100%" required>
+                    <option value="choose" disabled selected hidden>ΕΠΙΛΕΞΤΕ</option>
+                    <option value="man">MAN</option>
+                    <option value="woman">WOMAN</option>
+                </select><br>
+                
+                <div id="military" style="display: none;">
+
+                    <label for="militaryObligations" id="militaryObligationsLabel" class="center">*MILITARY OBLIGATIONS</label>
+                    <select name="militaryObligations" id="militaryObligations" style="text-align: center; width: 100%;" >
+                        <option value="choose" disabled selected hidden>CHOOSE</option>
+                        <option value="yes">Fulfilled</option>
+                        <option value="no">Unfulfilled</option>
+                    </select><br>
+
+                        <div id="militaryObligationsDate" style="display: none;">
+                            <label for="endOfMilitaryDate" class="center" >·DATE OF MILITARY COMPLETION</label>
+                            <input type="date" id="endOfMilitaryDate" name="endOfMilitaryDate" style="width: 100%;" required><br>
+                        </div>
+                </div>
+
+                <label for="creditCard" class="center">CREDIT CARDS</label>
+                <input type="checkbox" id="creditCard" name="creditCard" ><br>
+
+                <label for="loan" class="center">LOAN</label>
+                <input type="checkbox" id="loan" name="loan" ><br>
+
+                <label for="education" class="center">*EDUCATION</label>
+                <select name="education" id="education" class="center"  required>
+                    <option value="choose" disabled selected hidden>CHOOSE</option>
+                    <option value="jrHighschool"> Junior HighSchool</option>
+                    <option value="Highschool">HighSchool</option>
+                    <option value="University">University</option>
+                    <option value="College">College</option>                    
+                </select><br>
+               
+              </div>                
+                <button type="reset" class="conSubmit" id="submitForm">Submit</button>
+            </form>
+        </div>
+    </div>
+ 
+
+    <!-- Social icons -->
+    <div id="socialMedia">
+    <i class="fa-brands fa-facebook fa-2x social"></i>
+    <i class="fa-brands fa-twitter fa-2x social"></i>
+    <i class="fa-brands fa-google-plus-g fa-2x social"></i>
+    <i class="fa-brands fa-linkedin-in fa-2x social"></i>
+    <i class="fa-brands fa-instagram fa-2x social"></i>
+    </div>
+
+    <!-- Footer message -->
+    <div id="footer">
+    <h5 >Designed by Makis and developed by TAROU Productions</h5>
+    <h5 class="littleLeft">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Copyrights reserved to both.2023</h5>
+        </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
+
